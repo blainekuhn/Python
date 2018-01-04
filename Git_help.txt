@@ -1,0 +1,65 @@
+# -*- coding: utf-8 -*-
+
+GIT
+
+* Git init (init’s current directory as project)
+    * Creates a new git repo
+* Git diff filename
+    * Shows the diff between the working directory and the staging area
+* Git show HEAD 
+    * lists HEAD commits and changes made to files
+* For a modified file 
+* Git diff
+    * Shows lines with changes not yet committed (will have to git add filename to commit)
+* Git checkout HEAD filename
+    * Deletes any changes by bringing last checked in version into branch
+* Git add filename(s) or . to get all changed files
+* Git checkout HEAD filename
+    * Discards changes in the working directory
+* Git reset HEAD filename
+    * Unstages file changes in the staging area
+* Git reset comm
+* Git fetch remote_repo_name
+    * Copies local stuff to remote repo
+* git clone: Creates a local copy of a remote.
+* git remote -v: Lists a Git project's remotes. 
+* git fetch: Fetches work from the remote into the local copy.
+* git merge origin/master: Merges origin/master into your local branch.
+* git push origin <branch_name>: Pushes a local branch to the origin remote.
+* 
+
+
+Git init
+- Turn current directory into git project
+    - Git init
+        - Sets everything up
+
+There are 3 parts to a git project
+- A working directory
+    - Where you create, edit, and delete files
+- A staging area
+    - Where you list changes to make to the working directory
+- A repository
+    - Where bit stores changes as different versions of a project
+- NOTES: The Git workflow consists of editing files in the working directory, adding files to the staging area, and saving changes to a Git repository.
+
+Git show HEAD
+- Show the last commit
+
+Git reset HEAD filename
+- Recover changes to file already added to staging area
+- Used if accidentally added a file you have changed to the staging area
+- Basically unstage a file
+- The use git diff to see what’s changed in the file removed
+
+Git remote -v
+- Display remote repo
+
+Update local from remote
+- Git fetch origin. (Use git remote -v to find remote name)
+
+
+
+
+
+
