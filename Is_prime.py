@@ -1,4 +1,4 @@
-"""Find if a number is prime"""
+"""Find if a number is prime and print True"""
 
 def is_prime(x):
   if x < 2:
