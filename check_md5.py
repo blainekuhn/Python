@@ -9,9 +9,6 @@ It creates two files in the scanned root
 
 """
 import sys, getopt, os, hashlib
-from sys import argv
-
-
 
 md5 = hashlib.md5()
 d_dict = {}
@@ -19,10 +16,7 @@ f_dict = []
 log_dict = {}
 rootDir = '/Users/blainekuhn/Documents/1Job Hunt'
 #logFile = rootDir+"/"+"md5_log"
-
 #errorLog = rootDir+"/"+"md5_error_log"
-
-
 #check command-line inputs
 for a in range(len(sys.argv)):
   if a == 1:
@@ -32,7 +26,6 @@ for a in range(len(sys.argv)):
     errorLog = rootDir+"/"+"md5_error_log"
     print("your error log will be written to %s" % errorLog)
 
-    
 def checksum_md5(filename):
   #print filename
   import hashlib
